@@ -126,7 +126,9 @@ var Parser = function(data) {
     }
     //Get Sold
     var getSold = function() {
-        var product_id = $(data, "body").find("#product-id").attr('value');
+//        var product_id = $(data, "body").find("#product-id").attr('value');
+        var temp = productImage.split('/');
+        var product_id = temp[temp.length - 2];
         var sold = 0;
         if (product_id != '') {
             //get review
@@ -148,7 +150,9 @@ var Parser = function(data) {
     }
     //Get Views
     var getViews = function() {
-        var product_id = $(data, "body").find("#product-id").attr('value');
+//        var product_id = $(data, "body").find("#product-id").attr('value');
+        var temp = productImage.split('/');
+        var product_id = temp[temp.length - 2];
         var reviews = 0;
         if (product_id != '') {
             //get review
