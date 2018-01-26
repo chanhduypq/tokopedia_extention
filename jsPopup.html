@@ -1,0 +1,78 @@
+<!-- 
+    @Author: Tung Mai
+    Copyright © 2017 Tokopedia Scrapper
+-->
+<section class="container">
+    <span class="closeJsPopup"></span>
+    <div class="userPopup">
+        <div class="userinfo">        
+            <span class="username"></span>
+            <span class="logout">logout</span>
+        </div>
+    </div>
+    <!-- <div id="wellcome-msg">You have logged in successfully and the tool is ready now to use</div> -->
+    <span class="reFreshJsPopup"></span>
+    <header class="header">        
+        <div class="logo-text">
+            <a target="_blank" href="https://24x7studios.com/"><img id="jsLogo" src="" alt="Tokopedia Scrapper"/></a>
+        </div>
+        <div class="summary-header">
+            <div class="summary-container">
+                <span class="summary-title">Avg. Price</span>
+                <span class="summary-result js-avg-price" title="">--</span>
+            </div>
+            <div class="summary-container">
+                <span class="summary-title">Avg. Reviews</span>
+                <span class="summary-result js-avg-reviews" title="">--</span>
+            </div>
+            <div class="summary-container">
+                <span class="summary-title">Avg. Sold</span>
+                <span class="summary-result js-avg-sold" title="">--</span>
+            </div>
+            <div class="summary-container">
+                <span class="summary-title">Avg. Views</span>
+                <span class="summary-result js-avg-views" title="">--</span>
+            </div>
+        </div>
+    </header>
+    <div class="content-table">
+        <div class="product-image"><img src="" /></div>
+        <div class="js-product-history-section">
+            <img src="" />
+            <span class="closeProductHistory"></span>
+        </div>
+        <table id="js-table" class="tablesorter float-header" data-firstRow="" data-searchTerm="" data-extractUrl="" data-endpageNumber="">
+            <thead>
+                <tr class="float-header">
+                    <th data-tooltip="Rank in the search results" class="js-number sorter-digit">#</th>
+                    <th class="js-product-name sorter-text">Product Name</th>
+                     <th class="js-productUrl sorter-false hidden hiddenable">Product URL</th> <!-- for CSV -->
+                    <th data-tooltip="The current price in the buy box" class="js-price sorter-currency">Price</th>
+                    <th data-tooltip="The listings parent category" class="js-category sorter-text screenshot-hiddenable">Category</th>
+                    <th data-tooltip="The number of reviews that have been left on this listing" class="js-reviews sorter-digit">Reviews</th>
+                    <th data-tooltip="The number of sold that have been left on this listing" class="js-sold sorter-digit">Sold</th>
+                    <th data-tooltip="The number of views that have been left on this listing" class="js-views sorter-digit">Views</th>
+                    <th data-tooltip="The average review star rating" class="js-rating sorter-digit">Rating</th>
+                    <th data-tooltip="The Seller Name" class="js-bb-sellerName sorter-text">Seller Name</th>
+                    <th class="js-bb-sellerUrl sorter-false hidden hiddenable">Seller URL</th> <!-- for CSV -->
+                    <th data-tooltip="The Location" class="js-location sorter-text">Location</th>
+                    <th class="js-error sorter-false hidden hiddenable">Error</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+        <div class="main-screen">
+            <h1>Tokopedia Scrapper is not able to pull product information from this page.  Please try a different page.</h1>
+        </div>
+    </div>
+    <footer class="footer">
+        <!-- SearchPage | BestSellers -->
+        <a href="#" id="extractResults" data-section="SearchPage"></a>
+        <div class="export-section">
+           <a href="#" id="csvExport">Export CSV &#x2193;</a>
+        </div>
+        <a class="float-right" href="#" id="screenshotPage">
+            <img id="jsScreenshotImage" src="" height="20" width="20" /> 
+        </a>
+    </footer>
+</section>

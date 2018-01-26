@@ -1,0 +1,60 @@
+<!-- 
+    @Author: Tung Mai
+    Copyright © 2017 Tokopedia Scrapper
+-->
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<script src="js/libraries/jquery.js"></script>
+		<script src="js/popup.js"></script>
+		<link rel="stylesheet" href="css/popup.css" />
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+	</head>
+	<body class="popup">		
+    	<section class="container">    		    		
+		    <div class="toolbar">
+		    	<span class="closeJsPopup"></span>
+			    <div class="userPopup">
+			        <div class="userinfo">        
+			            <span class="username"></span>
+			            <span class="logout">logout</span>
+			        </div>
+			    </div>
+		    </div>
+		    <header class="header">
+		        <div class="logo-text">
+		            <img id="jsLogo" src="images/full-logo.png" alt="Tokopedia Scrapper"/>
+		        </div>
+		        <div class="summary-header">
+		            <div class="summary-container">
+		                <span class="summary-title">Results</span>
+		                <span class="summary-result"><i class="none-info">--</i></span>
+		            </div>
+
+		            <div class="summary-container">
+		                <span class="summary-title">Avg. Sales Rank</span>
+		                <span class="summary-result"><i class="none-info">--</i></span>
+		            </div>
+
+		            <div class="summary-container">
+		                <span class="summary-title">Avg. Price</span>
+		                <span class="summary-result"><i class="none-info">--</i></span>
+		            </div>
+
+		            <div class="summary-container">
+		                <span class="summary-title">Avg. # Reviews</span>
+		                <span class="summary-result"><i class="none-info">--</i></span>
+		            </div>
+		        </div>
+		    </header>
+		    <div class="content-table">
+		        <div class="main-screen">
+		            <h1 id="not_supported_store">Tokopedia Scrapper is not able to pull product information from this page.  Please try a different page.</h1>
+		       		<h1 id="request_access_store">Request access to this store</h1>
+		        </div>
+
+		    </div>
+		</section>
+	</body>
+</html>
